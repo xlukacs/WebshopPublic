@@ -1,0 +1,69 @@
+//===============Header===============//
+#navbarNavDropdown {
+    .navbar-nav{
+        .dropdown{
+            margin-top: 0px;
+        }
+        .profileHolder{
+            position: relative;
+        }
+        .nav-item .profileIcon{
+            &::before{
+                position: absolute;
+                left: -30px;
+                top: -4px;
+                content: '';
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                border: 1px solid gray;
+                border-radius: 50%;
+                background-color: lightgray;
+                background-image: url('/images/profileIcon.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+#navbarDropdownMenuLink{
+    img{
+        width:40px;
+    }
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+.dropdown-menu{
+    left: -50px;
+    z-index: 1011;
+    li a img{
+        width: 40px;
+    }
+}
+
+/*============Anketa added section=============*/
+.anketaEnterButton{
+    margin-right: 45px;
+    background-color: #476C9B;
+    color: black !important;
+    font-weight: bold;
+    padding: 0px 5px !important;
+}
+
+//LG
+@media(max-width: 992px){
+    .profileHolder{
+        .profileIcon{
+            &::before{
+               display: none !important;
+            }
+        }
+    }
+}

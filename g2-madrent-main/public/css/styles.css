@@ -1,0 +1,171 @@
+.container {
+    border: 2px solid #d3d1cb;
+    background-color: #a2a09e;
+    border-radius: 5px;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.main-center {
+    border: 2px solid #d3d1cb;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.main {
+    grid-gap: 5px;
+    padding: 10px;
+}
+.main-contact {
+    background-color: #ffffff;
+    border: 2px solid #d3d1cb;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.main-addr {
+    background-color: #ffffff;
+    border: 2px solid #d3d1cb;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.main-payment {
+    background-color: #ffffff;
+    border: 2px solid #d3d1cb;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.main-cart {
+    background-color: #ffffff;
+    border: 2px solid #d3d1cb;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.no-margin {
+ margin-bottom: 0 !important;
+}
+label {
+    padding-bottom: 0px;
+}
+
+.photo-product {
+    max-height: 80px;
+    max-width: 100px;
+}
+
+.info-pr {
+    column-gap: 20px;
+}
+
+.row-fr {
+    background-color: darksalmon;
+    border: 1px solid #85837e;
+    column-gap: 2px;
+
+}
+.col-cl-f {
+    background-color: firebrick;
+    border: 1px solid #85837e;
+}
+
+.sum-el{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.dropdown {
+    margin-top: 10px;
+}
+
+.round img {
+    border-radius: 100%;
+    max-width: 100%;
+}
+
+.card {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.comm_section {
+    resize: none;
+    margin: 10px;
+}
+
+.rating-color {
+    color: #fbc634 !important
+}
+
+.ratings i {
+    color: #cecece
+}
+
+.product_section {
+    margin-top: 30px;
+}
+
+.main_info {
+    column-gap: 70px;
+    margin-top: 20px;
+}
+
+.button_prod {
+    margin: 20px;
+}
+
+.profile_photo {
+    padding-left: 20px;
+}
+
+.button_changes {
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.main-cart .productRow{
+    margin-top: 20px;
+}
+
+
+@media (min-width: 576px) {
+    .description p{
+        margin: 10px;
+    }
+
+    .description {
+        margin: 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .description {
+        margin: 30px;
+    }
+
+    .description p{
+        margin: 30px;
+    }
+}
+
+.error_message {
+    color: red;
+}
+
+.feed_back{
+
+}
+
+.form-control {
+    margin: 5px 5px;
+}

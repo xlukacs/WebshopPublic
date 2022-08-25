@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Roboto", "serif";
+}
+
+.container-lg, .container-fluid {
+  padding-left: unset;
+  padding-right: unset;
+}
+
+.bg-blue {
+  background-color: #ADD9F4;
+}
+
+.bg-darkBlue {
+  background-color: #476C9B;
+}
+
+.bg-green {
+  background-color: #468C98;
+}
+
+.bg-red {
+  background-color: #984447;
+}
+
+.bg-black {
+  background-color: #010001;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.link {
+  color: black;
+  cursor: pointer;
+}
+.link:hover {
+  color: #494949;
+  transition: 0.1s all ease-in-out;
+}
+
+.separator-left {
+  border-left: 1px solid gray;
+}
+
+.separator-right {
+  border-right: 1px solid gray;
+}
+
+.separator-bottom {
+  border-bottom: 1px solid gray;
+}
+
+.border-black {
+  border-color: black;
+}
+
+.w-16 {
+  width: 16%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.no-padding-horizontal {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.no-padding-vertical {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.no-padding {
+  padding: unset !important;
+}
+
+.icon25::after {
+  content: "";
+  float: right;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.no-decoration {
+  text-decoration: none !important;
+}
+
+.underlineOnHover:hover {
+  text-decoration: underline !important;
+}
+
+.displayInput {
+  text-align: right;
+  border: unset;
+  background: unset;
+}
+
+.adminPanelButton {
+  background-color: #476C9B;
+  color: black !important;
+  font-weight: bold;
+  padding: 0px 5px !important;
+}
+.adminPanelButton:hover {
+  color: white !important;
+}
+
+.alert {
+  z-index: 1010;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width: 470px) {
+  .col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+#profileNav {
+  margin-top: 50px;
+  border-bottom: 2px solid #6c757d;
+}
+#profileNav a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #6c757d;
+  margin-right: -1px;
+  padding: 7px 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+}
+#profileNav a:hover {
+  text-decoration: none;
+  background-color: #343a40;
+  border-color: #343a40;
+  color: white;
+  font-weight: normal;
+}
+#profileNav .active {
+  background-color: #6c757d;
+  color: white;
+  font-weight: normal;
+}
+
+#orderList .order {
+  margin-top: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+}
+#orderList .order .orderItem {
+  width: 100%;
+}
+#orderList .order .orderItem img, #orderList .order .orderItem div {
+  float: left;
+}
+#orderList .order .orderItem .orderPic {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 16%;
+}
+#orderList .order .orderItem div h3 {
+  margin-top: 15px;
+}
+#orderList .order .orderItem div span {
+  float: right;
+  color: gray;
+}
+
+#settingsWrapper {
+  margin-top: 20px;
+  min-height: 500px;
+}
+#settingsWrapper .row {
+  margin-top: 10px;
+}
+#settingsWrapper .row div {
+  font-weight: bold;
+}
+#settingsWrapper .row div .display {
+  text-decoration: underline;
+}
+#settingsWrapper .row div .editButton {
+  width: 20px;
+  height: 20px;
+  background-image: url("/images/icons/editIcon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+#settingsWrapper .row div input {
+  padding: 3px 9px;
+  font-weight: bold;
+}
+#settingsWrapper .row div input[type=submit] {
+  font-weight: normal;
+}
+
+#dataButtons {
+  margin-top: 30px;
+}
+#dataButtons div {
+  padding: 3px 9px;
+  background-color: #6c757d;
+  color: white;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+.prompt {
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 5px;
+}
+
+.emptySpace {
+  min-height: 200px;
+}

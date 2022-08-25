@@ -1,0 +1,544 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Roboto", "serif";
+}
+
+.container-lg, .container-fluid {
+  padding-left: unset;
+  padding-right: unset;
+}
+
+.bg-blue {
+  background-color: #ADD9F4;
+}
+
+.bg-darkBlue {
+  background-color: #476C9B;
+}
+
+.bg-green {
+  background-color: #468C98;
+}
+
+.bg-red {
+  background-color: #984447;
+}
+
+.bg-black {
+  background-color: #010001;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.link {
+  color: black;
+  cursor: pointer;
+}
+.link:hover {
+  color: #494949;
+  transition: 0.1s all ease-in-out;
+}
+
+.separator-left {
+  border-left: 1px solid gray;
+}
+
+.separator-right {
+  border-right: 1px solid gray;
+}
+
+.separator-bottom {
+  border-bottom: 1px solid gray;
+}
+
+.border-black {
+  border-color: black;
+}
+
+.w-16 {
+  width: 16%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.no-padding-horizontal {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.no-padding-vertical {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.no-padding {
+  padding: unset !important;
+}
+
+.icon25::after {
+  content: "";
+  float: right;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.no-decoration {
+  text-decoration: none !important;
+}
+
+.underlineOnHover:hover {
+  text-decoration: underline !important;
+}
+
+.displayInput {
+  text-align: right;
+  border: unset;
+  background: unset;
+}
+
+.adminPanelButton {
+  background-color: #476C9B;
+  color: black !important;
+  font-weight: bold;
+  padding: 0px 5px !important;
+}
+.adminPanelButton:hover {
+  color: white !important;
+}
+
+.alert {
+  z-index: 1010;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width: 470px) {
+  .col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+#navbarNavDropdown .navbar-nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#navbarNavDropdown .navbar-nav .dropdown {
+  margin-top: 0px;
+}
+#navbarNavDropdown .navbar-nav .profileHolder {
+  position: relative;
+}
+#navbarNavDropdown .navbar-nav .nav-item .profileIcon::before {
+  position: absolute;
+  left: -30px;
+  top: -4px;
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: lightgray;
+  background-image: url("/images/profileIcon.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#navbarDropdownMenuLink img {
+  width: 40px;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.dropdown-menu {
+  left: -50px;
+  z-index: 1011;
+}
+.dropdown-menu li a img {
+  width: 40px;
+}
+
+/*============Anketa added section=============*/
+.anketaEnterButton {
+  margin-right: 45px;
+  background-color: #476C9B;
+  color: black !important;
+  font-weight: bold;
+  padding: 0px 5px !important;
+}
+
+@media (max-width: 992px) {
+  .profileHolder .profileIcon::before {
+    display: none !important;
+  }
+}
+.footerUpper {
+  margin-top: 50px;
+  box-sizing: border-box;
+  padding: 5px 20px;
+}
+.footerUpper .card {
+  background-color: unset;
+  border: 0px;
+  color: inherit;
+}
+.footerUpper .card img {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.footerUpper .card .card-body {
+  color: inherit;
+  padding: 5px;
+  text-align: center;
+}
+.footerUpper .card .card-body .card-text {
+  color: inherit;
+}
+
+.footerLower {
+  margin-top: 25px;
+  box-sizing: border-box;
+}
+.footerLower .footerPaymentOptions .extra-p {
+  padding-top: 10px;
+}
+.footerLower .footerPaymentOptions .row .extra-lh {
+  line-height: 80px;
+}
+.footerLower .footerPaymentOptions .row .extra-lh img {
+  height: 80px;
+}
+.footerLower .footerLinks {
+  box-sizing: border-box;
+}
+.footerLower .footerLinks .row .col h4 {
+  font-weight: bold;
+}
+.footerLower .footerLinks .row .col p a:hover {
+  text-decoration: none;
+}
+.footerLower .footerCopyright {
+  box-sizing: border-box;
+  padding: 5px 20px;
+  font-weight: bold;
+}
+.footerLower .footerCopyright .col .icon25::after {
+  margin-right: 5px;
+}
+.footerLower .footerCopyright .col a::after {
+  background-image: inherit;
+}
+.footerLower .footerCopyright .col .footerSocialIcon1 {
+  background-image: url("/images/facebookIcon.png");
+}
+.footerLower .footerCopyright .col .footerSocialIcon2 {
+  background-image: url("/images/youtubeIcon.png");
+}
+.footerLower .footerCopyright .col .footerSocialIcon3 {
+  background-image: url("/images/instagramIcon.png");
+}
+.footerLower .footerCopyright .col .footerSocialIcon4 {
+  background-image: url("/images/githubIcon.png");
+}
+
+@media (max-width: 768px) {
+  .footerPaymentOptions .row .extra-lh img {
+    width: 100%;
+    height: unset !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footerPaymentOptions .row .text-right {
+    text-align: center !important;
+  }
+}
+@media (max-width: 470px) {
+  .footerCopyright {
+    padding: unset !important;
+  }
+}
+.searchRow {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.searchRow .logoWrapper {
+  cursor: pointer;
+}
+.searchRow div img {
+  height: 125px;
+  width: 125px;
+}
+.searchRow .searchAndCart form input[type=text] {
+  margin-right: -5px;
+  width: 250px;
+  padding-left: 15px;
+}
+.searchRow .searchAndCart form input[type=text]:focus {
+  outline: none !important;
+}
+.searchRow .searchAndCart form input[type=submit] {
+  background-image: url("/images/searchIcon.png");
+  background-size: 42% 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 62px;
+  height: 33px;
+  color: transparent;
+}
+.searchRow .searchAndCart form input {
+  padding: 3px;
+}
+.searchRow .searchAndCart form, .searchRow .searchAndCart div {
+  margin-right: 20px;
+}
+.searchRow .searchAndCart .cart {
+  height: 33px;
+  width: 62px;
+  border: 2px solid #4b4b4b;
+  background-color: #aaaaaa;
+  border-radius: 3px;
+  background-image: url("/images/cartIcon.png");
+  background-size: 40% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.searchRow .searchAndCart .cart:hover {
+  cursor: pointer;
+}
+.searchRow .searchAndCart .cart .itemsInCartCounter {
+  position: relative;
+  top: -14px;
+  right: -47px;
+  background-color: gray;
+  z-index: 1001;
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 25px;
+  height: 25px;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .searchAndCart {
+    margin-top: 30px;
+    justify-content: center !important;
+  }
+}
+@media (max-width: 480px) {
+  .searchAndCart form {
+    width: 100% !important;
+    margin-right: unset !important;
+  }
+  .searchAndCart form input[type=text] {
+    width: 100% !important;
+  }
+  .searchAndCart form input[type=submit] {
+    background-size: 55% 70% !important;
+    width: 47px !important;
+    display: none;
+  }
+
+  .cart {
+    position: absolute;
+    top: -210px;
+    right: 0px;
+  }
+}
+.upperNavBar {
+  border-bottom: 2px solid gray;
+}
+.upperNavBar .nav-item .nav-link {
+  color: black;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  height: 45px;
+  line-height: 45px;
+  padding: unset;
+  /*&::after{
+      display: inline-block;
+      right: 30px;
+      top: -1px;
+  }*/
+}
+.upperNavBar .nav-item .nav-link:hover {
+  border: 1px solid gray;
+  border-bottom: 0px;
+  margin-bottom: -1px;
+}
+.upperNavBar .nav-item .nav-link .categoryIcon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 7px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.upperNavBar .nav-item .active {
+  background-color: #343a40;
+  color: white;
+  font-weight: normal;
+}
+
+.nav-active-bg {
+  background-color: gray;
+}
+
+.navTab {
+  width: 16.6666666%;
+  /*.navTabIcon::after{
+      background-image: url('/images/testIcon.png');
+  }
+  .navTabIcon1::after{
+      background-image: url('/images/pcIcon.png');
+  }
+  .navTabIcon2::after{
+      background-image: url('/images/petIcon.png');
+  }*/
+}
+
+#fullWidthNavbar .navbar-collapse {
+  justify-content: flex-start;
+}
+#fullWidthNavbar .navbar-collapse .upperNavBar {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .upperNavBar .navTab .nav-link::after {
+    display: none;
+  }
+
+  .upperNavBar .nav-item {
+    width: 100%;
+    background-color: lightgray;
+  }
+  .upperNavBar .nav-item .nav-link {
+    border-radius: unset;
+  }
+  .upperNavBar .nav-item .active {
+    background-color: #4882bd;
+  }
+
+  #fullWidthNavbar {
+    background-color: #343a40 !important;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  #fullWidthNavbar button {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 650px) {
+  .upperNavBar .nav-item .nav-link .categoryIcon {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  #fullWidthNavbar {
+    width: 100%;
+  }
+}
+/*========Widget========*/
+#anketaWrapper {
+  position: fixed;
+  z-index: 1100;
+  background-color: #343a40 !important;
+  bottom: 0px;
+  right: 50px;
+  padding: 20px;
+  box-sizing: border-box;
+  min-width: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid lightgray;
+  border-bottom: 0px;
+}
+#anketaWrapper p, #anketaWrapper form > ul > li > label, #anketaWrapper span {
+  color: lightgray;
+}
+#anketaWrapper p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+#anketaWrapper input[type=submit] {
+  background-color: gray;
+  color: lightgray;
+  border-radius: 5px;
+  padding: 3px 6px;
+}
+
+/*========Display page========*/
+.specialHeight {
+  padding-top: 20px;
+  min-height: 500px;
+}
+.specialHeight form input {
+  padding: 3px 6px;
+}
+.specialHeight section {
+  margin-top: 20px;
+}
+
+#anketaItems li {
+  list-style-type: none;
+  background-color: lightgray;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+#anketaItems li .questionText {
+  width: 80%;
+}
+#anketaItems li .questionControls {
+  width: 20%;
+}
+#anketaItems li .questionControls form {
+  display: inline;
+}
+
+#adderForm form {
+  display: flex;
+  flex-direction: column;
+}
+#adderForm form input[type=submit] {
+  display: inline;
+  width: 100px;
+}

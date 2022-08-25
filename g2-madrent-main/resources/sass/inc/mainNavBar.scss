@@ -1,0 +1,106 @@
+.upperNavBar{
+    border-bottom: 2px solid gray;
+    .nav-item{
+        .nav-link{
+            color: black;
+            font-weight: bold;
+            box-sizing: border-box;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            height: 45px;
+            line-height: 45px;
+
+            padding: unset;
+            &:hover{
+                border: 1px solid gray;
+                border-bottom: 0px;
+                margin-bottom: -1px;
+            }
+            .categoryIcon{
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                position: relative;
+                top: 7px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            /*&::after{
+                display: inline-block;
+                right: 30px;
+                top: -1px;
+            }*/
+        }
+        .active{
+            background-color: $dark;
+            color: white;
+            font-weight: normal;
+        }
+    }
+}
+
+.nav-active-bg{
+    background-color: gray;
+}
+
+.navTab{
+    width: 16.6666666%;
+    /*.navTabIcon::after{
+        background-image: url('/images/testIcon.png');
+    }
+    .navTabIcon1::after{
+        background-image: url('/images/pcIcon.png');
+    }
+    .navTabIcon2::after{
+        background-image: url('/images/petIcon.png');
+    }*/
+}
+
+#fullWidthNavbar .navbar-collapse{
+    justify-content: flex-start;
+    .upperNavBar{
+        width: 100%;
+    }
+}
+
+//MD
+@media(max-width: 768px){
+    .upperNavBar .navTab .nav-link::after{
+        display: none;
+    }
+    .upperNavBar .nav-item{
+        width: 100%;
+        background-color: lightgray;
+        .nav-link{
+            border-radius: unset;
+        }
+        .active{
+            background-color: #4882bd;
+        }
+    }
+
+    #fullWidthNavbar{
+        background-color: #343a40 !important;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+        button{
+            margin-bottom: 5px;
+        }
+    }
+}
+
+//~sm MD
+@media(max-width: 650px){
+    .upperNavBar .nav-item .nav-link .categoryIcon{
+        display: none;
+    }
+}
+
+//SM
+@media(max-width: 576px){
+    #fullWidthNavbar{
+        width: 100%;
+    }
+}

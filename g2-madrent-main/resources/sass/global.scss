@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Roboto', 'serif';
+}
+
+$blue:#ADD9F4;
+$darkBlue: #476C9B;
+$green: #468C98;
+$red: #984447;
+$black: #010001;
+$dark: #343a40;
+$secondary: #6c757d;
+
+$globalImgPath: "/res/img/";
+
+.container-lg, .container-fluid{
+    padding-left: unset;
+    padding-right: unset;
+}
+
+.bg-blue{
+    background-color: $blue;
+}
+
+.bg-darkBlue{
+    background-color: $darkBlue;
+}
+
+.bg-green{
+    background-color: $green;
+}
+
+.bg-red{
+    background-color: $red;
+}
+
+.bg-black{
+    background-color: $black;
+}
+
+ul{
+   list-style-type: none; 
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.link{
+    color: black;
+    cursor: pointer;
+    &:hover{
+        color: rgb(73, 73, 73);
+        transition: 0.1s all ease-in-out;
+    }
+}
+
+.separator-left{
+    border-left: 1px solid gray;
+}
+
+.separator-right{
+    border-right: 1px solid gray;
+}
+.separator-bottom{
+    border-bottom: 1px solid gray;
+}
+.border-black{
+    border-color: black;
+}
+.w-16{
+    width: 16%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.no-padding-horizontal{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.no-padding-vertical{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.no-padding{
+    padding: unset !important;
+}
+
+.icon25::after{
+    content: '';
+    float: right;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.no-decoration{
+    text-decoration: none !important;
+}
+
+.underlineOnHover{
+    &:hover{
+        text-decoration: underline !important;
+    }
+}
+
+.displayInput{
+    text-align: right;
+    border: unset;
+    background: unset;
+}
+
+.adminPanelButton{
+    background-color: #476C9B;
+    color: black !important;
+    font-weight: bold;
+    padding: 0px 5px !important;
+    &:hover{
+        color: white !important;
+    }
+}
+
+.alert{
+    z-index: 1010;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media(max-width: 470px){
+    .col-xs-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

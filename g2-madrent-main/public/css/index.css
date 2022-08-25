@@ -1,0 +1,350 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Roboto", "serif";
+}
+
+.container-lg, .container-fluid {
+  padding-left: unset;
+  padding-right: unset;
+}
+
+.bg-blue {
+  background-color: #ADD9F4;
+}
+
+.bg-darkBlue {
+  background-color: #476C9B;
+}
+
+.bg-green {
+  background-color: #468C98;
+}
+
+.bg-red {
+  background-color: #984447;
+}
+
+.bg-black {
+  background-color: #010001;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.link {
+  color: black;
+  cursor: pointer;
+}
+.link:hover {
+  color: #494949;
+  transition: 0.1s all ease-in-out;
+}
+
+.separator-left {
+  border-left: 1px solid gray;
+}
+
+.separator-right {
+  border-right: 1px solid gray;
+}
+
+.separator-bottom {
+  border-bottom: 1px solid gray;
+}
+
+.border-black {
+  border-color: black;
+}
+
+.w-16 {
+  width: 16%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.no-padding-horizontal {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.no-padding-vertical {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.no-padding {
+  padding: unset !important;
+}
+
+.icon25::after {
+  content: "";
+  float: right;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.no-decoration {
+  text-decoration: none !important;
+}
+
+.underlineOnHover:hover {
+  text-decoration: underline !important;
+}
+
+.displayInput {
+  text-align: right;
+  border: unset;
+  background: unset;
+}
+
+.adminPanelButton {
+  background-color: #476C9B;
+  color: black !important;
+  font-weight: bold;
+  padding: 0px 5px !important;
+}
+.adminPanelButton:hover {
+  color: white !important;
+}
+
+.alert {
+  z-index: 1010;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width: 470px) {
+  .col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.row {
+  margin-left: unset;
+  margin-right: unset;
+}
+
+#hotItemCarousel {
+  width: 80%;
+}
+#hotItemCarousel .carousel-indicators {
+  top: 20px;
+  bottom: unset;
+  left: 595px;
+  flex-direction: column;
+  margin-left: unset;
+  margin-right: unset;
+}
+#hotItemCarousel .carousel-indicators .active {
+  background-color: #363636;
+  color: #c7c7c7;
+}
+#hotItemCarousel .carousel-indicators .active a {
+  color: gray;
+}
+#hotItemCarousel .carousel-indicators .active a span {
+  width: 243px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+#hotItemCarousel .carousel-indicators .active a::before {
+  content: "";
+  width: 1px;
+  height: 1px;
+  display: block;
+  border: 21px solid transparent;
+  border-right: 21px solid #363636;
+  position: absolute;
+  left: -42px;
+  top: -1px;
+}
+#hotItemCarousel .carousel-indicators li {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  background-color: gray;
+  text-indent: unset;
+  border-top: unset;
+  border-bottom: unset;
+  opacity: 1;
+  padding: 5px 20px;
+  border: 1px solid #666666;
+}
+#hotItemCarousel .carousel-indicators li a {
+  color: black;
+  font-weight: bold;
+}
+#hotItemCarousel .carousel-indicators li a:hover {
+  text-decoration: none;
+}
+#hotItemCarousel .carousel-inner .carousel-item {
+  cursor: pointer;
+}
+#hotItemCarousel .carousel-inner .carousel-item div[data-slide-type=carousel] {
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5x;
+  width: 600px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#hotItemCarousel .carousel-inner .carousel-item .carousel-caption {
+  right: 50%;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 5px;
+}
+#hotItemCarousel .carousel-inner .carousel-item .carousel-caption h5, #hotItemCarousel .carousel-inner .carousel-item .carousel-caption p {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px black;
+}
+
+.displayRows {
+  margin-top: 30px;
+}
+.displayRows h3 {
+  padding-left: 50px;
+}
+.displayRows .firstRow {
+  margin-top: 10px !important;
+}
+
+.displayRow {
+  flex-direction: row;
+  width: 95%;
+  height: 270px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: lightgray;
+}
+.displayRow .product {
+  box-sizing: border-box;
+  padding-top: 5px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.displayRow .product .wrapper {
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  height: 95%;
+  margin: auto;
+  min-width: 184px;
+}
+.displayRow .product .wrapper .imgPrev {
+  margin: auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 180px;
+}
+.displayRow .product .wrapper .data {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  padding-top: 5px;
+}
+.displayRow .product .wrapper .data h5 {
+  margin: auto;
+  width: 90%;
+  height: 50px;
+}
+.displayRow .product .wrapper .data p {
+  font-weight: bold;
+  height: 20px;
+}
+.displayRow .controls {
+  position: relative;
+  top: 42%;
+}
+.displayRow .controls div {
+  position: absolute;
+  font-weight: bold;
+  display: inline-block;
+  width: 15px;
+  height: 40px;
+  line-height: 34px;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  box-sizing: border-box;
+  padding: 3px;
+}
+.displayRow .controls div:hover {
+  cursor: pointer;
+  background-color: darkgray;
+}
+.displayRow .controls .controlLeft {
+  left: 0px;
+  text-align: left;
+}
+.displayRow .controls .controlRight {
+  right: 0px;
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  #hotItemCarousel {
+    width: 65%;
+  }
+  #hotItemCarousel .carousel-indicators li {
+    width: 200px;
+  }
+  #hotItemCarousel .carousel-inner .carousel-item .carousel-caption {
+    right: 15%;
+  }
+}
+@media (max-width: 992px) {
+  #hotItemCarousel {
+    width: 100%;
+  }
+  #hotItemCarousel .d-block {
+    margin: auto;
+  }
+  #hotItemCarousel .carousel-indicators {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  #hotItemCarousel {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .displayRow article {
+    width: 50%;
+  }
+}

@@ -1,0 +1,237 @@
+@charset "UTF-8";
+.productList .row {
+  margin-top: 10px;
+}
+
+.productList .row .col .card .card-header {
+  padding: unset;
+}
+.productList .row .col .card .card-header .card-image {
+  height: 250px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.productList .row .col .card .card-body a {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 42px;
+  clear: both;
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  color: black;
+}
+.productList .row .col .card .card-body a:hover {
+  text-decoration: none;
+}
+.productList .row .col .card .card-body p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 111px;
+}
+
+.rating {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.rating .star {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-image: url("/images/emptyStar.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.rating .selected {
+  background-image: url("/images/fullStar.png");
+}
+
+.productList > * .card-text {
+  overflow: hidden;
+}
+
+.favouriteButton {
+  float: right;
+  width: 25px;
+  height: 25px;
+  background-image: url("/images/favouriteEmpty.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.favourited {
+  background-image: url("/images/favouriteFull.png");
+}
+
+.priceAndBuy span {
+  font-weight: bold;
+}
+.priceAndBuy span::after {
+  content: "€";
+}
+.priceAndBuy button {
+  float: right;
+  width: 50px;
+  height: 30px;
+  display: block;
+  background-image: url("/images/cartIcon.png");
+  background-size: auto 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2px;
+}
+
+.filterSelectors {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.filterSelectors div .form-check-label {
+  color: white;
+}
+
+.filterRow {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.filterRow .h5 {
+  color: lightgray;
+}
+.filterRow form input[type=submit] {
+  margin-top: 20px;
+  padding: 3px 9px;
+}
+.filterRow .color-selector {
+  width: 150px;
+}
+.filterRow .color-selector option {
+  display: block;
+}
+.filterRow .color-selector option::after {
+  content: "";
+  width: 1px;
+  height: 1px;
+  border: 3px solid red;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  z-index: 1100;
+  top: 0px;
+}
+
+.filterRow input[type=range] {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 150px;
+  margin: 0;
+  padding: 0 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Add some L/R padding to ensure box shadow of handle is shown */
+  overflow: hidden;
+  border: 0;
+  border-radius: 1px;
+  outline: none;
+  background: linear-gradient(grey, grey) no-repeat center;
+  /* Use a linear gradient to generate only the 2px height background */
+  background-size: 100% 2px;
+  pointer-events: none;
+}
+.filterRow input[type=range]:active, .filterRow input[type=range]:focus {
+  outline: none;
+}
+.filterRow input[type=range]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+  margin: 5px 0;
+  /* Add some margin to ensure box shadow is shown */
+  cursor: pointer;
+  -webkit-appearance: none;
+          appearance: none;
+  pointer-events: all;
+  box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+}
+.filterRow input[type=range]::-webkit-slider-thumb::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 100%;
+  width: 2000px;
+  height: 2px;
+}
+.filterRow .multi-range {
+  position: relative;
+  height: 50px;
+  display: block;
+}
+.filterRow .multi-range input[type=range] {
+  position: absolute;
+}
+.filterRow .multi-range input[type=range]:nth-child(1)::-webkit-slider-thumb::before {
+  background-color: red;
+}
+.filterRow .multi-range input[type=range]:nth-child(2) {
+  background: none;
+}
+.filterRow .multi-range input[type=range]:nth-child(2)::-webkit-slider-thumb::before {
+  background-color: grey;
+}
+
+.filterSelector {
+  height: auto;
+}
+
+input[name=filterSelectors] {
+  margin-top: 10px;
+  padding: 3px 6px;
+}
+
+.moneyFilterSelector div {
+  gap: 5px;
+}
+.moneyFilterSelector div input[type=text] {
+  width: 75px;
+  padding: 2px 6px;
+}
+
+.additionalDataForList form {
+  margin-left: 20px;
+}
+.additionalDataForList form label {
+  font-weight: bold;
+}
+.additionalDataForList form select {
+  width: 100px;
+}
+.additionalDataForList form input[type=submit] {
+  padding: 3px 9px;
+  margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .filterRow .color-selector {
+    width: 300px;
+  }
+
+  .filterRow input[type=range] {
+    width: 300px;
+  }
+
+  .moneyFilterSelector div {
+    gap: 30px;
+  }
+}

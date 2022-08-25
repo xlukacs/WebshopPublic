@@ -1,0 +1,92 @@
+.searchRow{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .logoWrapper{
+        cursor: pointer;
+    }
+    div img{
+        height: 125px;
+        width: 125px;
+    }
+    .searchAndCart{
+        form input[type=text]{
+            margin-right: -5px;
+            width: 250px;
+            padding-left: 15px;
+            &:focus{
+                outline: none !important;
+            }
+        }
+        form input[type=submit]{
+            background-image: url('/images/searchIcon.png');
+            background-size: 42% 80%;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 62px;
+            height: 33px;
+            color: transparent;
+        }
+        form input{
+            padding: 3px;
+        }
+        form, div{
+            margin-right: 20px;
+        }
+        .cart{
+            height: 33px;
+            width: 62px;
+            border: 2px solid rgb(75, 75, 75);
+            background-color: rgb(170, 170, 170);
+            border-radius: 3px;
+            background-image: url('/images/cartIcon.png');
+            background-size: 40% 70%;
+            background-position: center;
+            background-repeat: no-repeat;
+            &:hover{
+                cursor: pointer;
+            }
+            .itemsInCartCounter{
+                position: relative;
+                top: -14px;
+                right: -47px;
+                background-color: gray;
+                z-index: 1001;
+                border-radius: 50%;
+                border: 2px solid black;
+                width: 25px;
+                height: 25px;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//LG
+@media(max-width: 992px){
+    .searchAndCart{
+        margin-top: 30px;
+        justify-content: center !important;
+    }
+}
+
+//XS
+@media(max-width: 480px){
+    .searchAndCart form{
+        width: 100% !important;
+        margin-right: unset !important;
+        input[type=text]{
+            width: 100% !important;
+        }
+        input[type=submit]{
+            background-size: 55% 70% !important;
+            width: 47px !important;
+            display: none;
+        }
+    }
+    .cart{
+        position: absolute;
+        top: -210px; //TODO just set to 0px and figure out to move it there
+        right: 0px;
+    }
+}

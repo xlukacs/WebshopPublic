@@ -1,0 +1,110 @@
+@import "../global";
+
+#profileNav{
+    margin-top: 50px;
+    border-bottom: 2px solid $secondary;
+    a{
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid $secondary;
+        margin-right: -1px;
+        padding: 7px 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            text-decoration: none;
+            background-color: $dark;
+            border-color: $dark;
+            color: white;
+            font-weight: normal;
+        }
+    }
+    .active{
+        background-color: $secondary;
+        color: white;
+        font-weight: normal;
+    }
+}
+
+#orderList{
+    .order{
+        margin-top: 10px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 10px;
+        .orderItem{
+            width: 100%;
+            img,div{
+                float: left;
+            }
+            .orderPic{
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 100%;
+                width: 16%;
+            }
+            div{
+                h3{
+                    margin-top: 15px;
+                }
+                span{
+                    float: right;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+#settingsWrapper{
+    margin-top: 20px;
+    min-height: 500px;
+    .row{
+        margin-top: 10px;
+        div{
+            font-weight: bold;
+            .display{
+                text-decoration: underline;
+            }
+            .editButton{
+                width: 20px;
+                height: 20px;
+                background-image: url('/images/icons/editIcon.png');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+            input{
+                padding: 3px 9px;
+                font-weight: bold;
+            }
+            input[type=submit]{
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+#dataButtons{
+    margin-top: 30px;
+    div{
+        padding: 3px 9px;
+        background-color: $secondary;
+        color: white;
+        margin: 10px;
+        border-radius: 3px;
+    }
+}
+
+.prompt{
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 5px;
+}
+.emptySpace{
+    min-height: 200px;
+}

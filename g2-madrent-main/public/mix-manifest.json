@@ -1,0 +1,10 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/custom.js": "/js/custom.js",
+    "/css/app.css": "/css/app.css",
+    "/css/components.css": "/css/components.css",
+    "/css/profile.css": "/css/profile.css",
+    "/css/index.css": "/css/index.css",
+    "/css/products.css": "/css/products.css",
+    "/css/adminPanel.css": "/css/adminPanel.css"
+}

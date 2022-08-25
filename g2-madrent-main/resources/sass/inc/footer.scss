@@ -1,0 +1,112 @@
+//=================Footer====================//
+.footerUpper{
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    .card{
+        background-color: unset;
+        border: 0px;
+        color: inherit;
+        img{
+            width: 50px;
+            height: 50px;
+            margin: auto;
+        }
+        .card-body{
+            color: inherit;
+            padding: 5px;
+            text-align: center;
+            .card-text{
+                color: inherit;
+            }
+        }
+    }
+}
+
+.footerLower{
+    margin-top: 25px;
+    box-sizing: border-box;
+    .footerPaymentOptions{
+        .extra-p{
+            padding-top: 10px;
+        }
+        .row .extra-lh{
+            line-height: 80px;
+            img{
+                height: 80px;
+            }
+        }
+    }
+    .footerLinks{
+        box-sizing: border-box;
+        .row .col h4{
+            font-weight: bold;
+        }
+        .row .col p a{
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .footerCopyright{
+        box-sizing: border-box;
+        padding: 5px 20px; 
+        font-weight: bold;
+        .col .icon25::after{
+            margin-right: 5px;
+        }
+        // .col .footerSocialIcon1{
+        //     background-image: url('/images/testIcon.png');
+        //     &:hover{
+        //         background-image: url('/images/testIconHover.png');
+        //     }
+        //     &::after{
+        //         background-image: inherit;
+        //     }
+        // }
+        .col{
+            a::after{
+                background-image: inherit;
+            }
+            .footerSocialIcon1{
+                background-image: url('/images/facebookIcon.png');
+            }
+            .footerSocialIcon2{
+                background-image: url('/images/youtubeIcon.png');
+            }
+            .footerSocialIcon3{
+                background-image: url('/images/instagramIcon.png');
+            }
+            .footerSocialIcon4{
+                background-image: url('/images/githubIcon.png');
+            }
+        }
+    }
+}
+
+//MD
+@media(max-width: 768px){
+    .footerPaymentOptions .row {
+        .extra-lh{
+            img{
+                width: 100%;
+                height: unset !important;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .text-right{
+            text-align: center !important;
+        }
+    }
+}
+
+
+//XS
+@media(max-width: 470px){
+    .footerCopyright{
+        padding: unset !important;
+    }
+}
